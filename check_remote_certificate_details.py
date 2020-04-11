@@ -26,6 +26,8 @@ def get_cert_details(hostname,port):
 #hostname="expired.badssl.com"
 #hostname="wrong.host.badssl.com"
 hostname="wrong.host.badssl.com"
+port = 443
 
-result_dict=get_cert_details(hostname,443)
+#Function call to get the details
+result_dict=get_cert_details(hostname,port)
 print(result_dict)
