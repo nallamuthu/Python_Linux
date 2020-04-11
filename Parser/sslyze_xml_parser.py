@@ -32,6 +32,8 @@ def is_weak_cipher_enabled(root,search_element):
 def get_ssl_ciphers(root):
 	ssl_ciphers={}
 	ssl_versions=['sslv2','sslv3','tlsv1','tlsv1_1','tlsv1_2','tlsv1_3']
+	for item in ssl_versions:
+		ssl_ciphers[item]="N/A" #Populate the dictonary with all the ssl version/cipher set to N/A
 	for version in ssl_versions:
 		status=is_ssl_version_supported(root,version) #Check the ssl version is supported or not
 		if status=="True":
@@ -67,6 +69,6 @@ def parse_sslyze_xml_file(input_file):
 		print("File not Found")
 	return result_dict
 
-input_file='output.xml'
+input_file='xml'
 result_dict=parse_sslyze_xml_file(input_file) #Function call with file name
 print(result_dict)
