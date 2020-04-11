@@ -18,5 +18,6 @@ def parse_testssl_csv_file(input_file):
 	return result_dict #Result dict
 	
 #Call to function by passing the testssl out file
-result_dict=parse_testssl_csv_file('out.csv')
+input_file='output.csv'
+result_dict=parse_testssl_csv_file(input_file)
 print(result_dict)
