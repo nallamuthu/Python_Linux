@@ -84,7 +84,7 @@ def parse_sslyze_xml_file(input_file):
 		result_dict = dict.fromkeys( result_dict, "ERROR" ) #if any error occurs set all the value to ERROR	
 	return result_dict
 
-#Main enter for program
+#Main entry for program
 input_file='input.xml'
 result_dict=parse_sslyze_xml_file(input_file) #Function call with file name
 print(result_dict)
