@@ -1,7 +1,8 @@
 #Read Me - Make connection to remote host and port and get the certificate
 #Input   - Hostname and Port
 #Output  - Dictonary contains Certificate (Expired or not, Expiry Date, Expiry Days Count, Digital Signature Algorithm)
- 
+
+#pip3 install pyOpenSSL
 import OpenSSL
 import ssl, socket
 from datetime import timedelta, date
