@@ -1,7 +1,6 @@
 #Read ME - SSLYZE Output file processed as XML
 #Input - SSLYZE Output XML File
 #Output - Dictonary (Contains the hostname, ip, port, SSL versions and respective weak ciphers if any)
-
 import xml.etree.ElementTree as ET
 import os
 
@@ -13,8 +12,6 @@ def is_ssl_version_supported(root,search_element):
 			if element.attrib['isProtocolSupported']: #Check if the element has the parameter isProtocolSupported
 				status= element.attrib['isProtocolSupported'] #Return True or False
 	return status
-
-
 
 #Check weak ciphers is enabled on the enabled SSL versions
 def is_weak_cipher_enabled(root,search_element):
@@ -31,8 +28,6 @@ def is_weak_cipher_enabled(root,search_element):
 								weak_cipher_list.append(conn_cipher)
 	return weak_cipher_list
 
-
-
 #Get all the SSL Version and respective cipher
 def get_ssl_ciphers(root):
 	ssl_ciphers={}
@@ -48,7 +43,6 @@ def get_ssl_ciphers(root):
 		else:
 			ssl_ciphers[version]="FALSE" #if the ssl version is not enabled set version to flase
 	return ssl_ciphers
-
 
 #Get scan details(host, ip, port)
 def get_scan_details(root):
@@ -73,6 +67,6 @@ def parse_sslyze_xml_file(input_file):
 		print("File not Found")
 	return result_dict
 
-
-result_dict=parse_sslyze_xml_file('xml')
+input_file='output.xml'
+result_dict=parse_sslyze_xml_file(input_file) #Function call with file name
 print(result_dict)
