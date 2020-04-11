@@ -21,7 +21,7 @@ def parse_nmap_xml_file(input_file):
 
 input_file='output.xml'
 host_status,result_dict=parse_nmap_xml_file(input_file) #Call the function with the filename as parameter
-print("Host Status: "+host_status)
-print("Ports->Service: "+result_dict)
+print(host_status)
+print(result_dict)
 
 
