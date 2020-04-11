@@ -1,6 +1,8 @@
 #Read ME - NMAP Output file is converted to dictonary and processed
 #Input - NMAP Output XML File
 #Output - Dictonary (Contains the opened port number and service name)
+
+#pip install xmltodict
 import xmltodict
 import os
 
