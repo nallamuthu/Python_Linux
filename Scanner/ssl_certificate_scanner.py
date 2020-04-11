@@ -27,13 +27,9 @@ def get_cert_details(hostname,port):
 	return result_dict 	#Return the dict contains the result
 
 
-#hostname="expired.badssl.com"
-#hostname="wrong.host.badssl.com"
-hostname="wrong.host.badssl.com"
+#Main entry for program
+hostname="expired.badssl.com"
 port = 443
-
 #Function call to get the details
 result_dict=get_cert_details(hostname,port)
 print(result_dict)
-
-#Pending timeout, try catch
