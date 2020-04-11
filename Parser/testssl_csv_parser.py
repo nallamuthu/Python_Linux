@@ -6,7 +6,9 @@ import csv
 #Function call to parser the CSV File
 def parse_testssl_csv_file(input_file):
 	result_dict={}
-	search_list=['heartbleed','ccs','ticketbleed','robot','crime_tls','breach','poodle_ssl','freak','beast','lucky13','sweet32','logjam','drown','secure_renego','secure_client_renego','fallback_scsv']	
+	search_list=['heartbleed','ccs','ticketbleed','robot','crime_tls','breach','poodle_ssl','freak','beast','lucky13','sweet32','logjam','drown','secure_renego','secure_client_renego','fallback_scsv']
+	for item in search_list:
+		result_dict[item]="N/A"	 #Pre Populate the dictonary with all the vulnerabilities set to N/A
 	heartbleed=ccs=ticketbleed=robot=crime=breach=poodle=freak=beast=lucky13=sweet32=logjam=drown=sr_server=sr_client=fallback_scsv="N/A"
 	with open(input_file, 'r') as file:
 		reader = csv.reader(file)
@@ -14,10 +16,9 @@ def parse_testssl_csv_file(input_file):
 			for item in search_list:
 				if item == csv_row[0].lower(): #csv_row[0] contains the vulnerability name
 					result_dict[item]=csv_row[3] #csv_row[3] contains the result vulnerable or not
-				heartbleed=csv_row[3]
 	return result_dict #Result dict
 	
 #Call to function by passing the testssl out file
-input_file='output.csv'
+input_file='out.csv'
 result_dict=parse_testssl_csv_file(input_file)
 print(result_dict)
