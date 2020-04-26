@@ -1,7 +1,7 @@
 # Python3 scripts
 
 ## General:
-* List    - Remove Duplicates, Remove Null, Covert file to List, Count
+* [List](https://github.com/nallamuthu/Python_Snippets/blob/master/General/list_opreation.py)    - Remove Duplicates, Remove Null, Covert file to List, Count
 * [SQLITE3](https://github.com/nallamuthu/Python_Snippets/blob/master/SQLite3/sql.py) - Contains all the sqlite3 python operations. Create, Update, Insert, Select queries 
 
 ## Tools Scanner:
