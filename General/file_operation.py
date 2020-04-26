@@ -16,3 +16,15 @@ input_file='inp_file.txt'
 #Check if file exist
 if os.path.isfile(output_file):
     file_string_replace(output_file)
+
+#Get absolute path of the file
+file_abspath=os.path.abspath("dir/myfile.txt")
+
+#Get the directory path - leaving the file name
+dir_abspath=os.path.dirname(file_abspath)
+
+#Get the File name with extension
+filename_withext=os.path.basename(file_abspath)
+
+#Get the filename removing the extension 
+filename=os.path.splitext(filename_withext)[0]  #Assuming there is only 1 dot
