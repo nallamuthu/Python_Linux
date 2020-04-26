@@ -4,7 +4,7 @@ def remove_duplicate_list(input_list):
 	return output_list
 
 #Remove Empty elements from list  - Input (list)1 | Output (list)1
-def remove_empty_element_list(input_list)
+def remove_empty_element_list(input_list):
 	output_list = [x for x in input_list if x] 
 	return output_list
 
