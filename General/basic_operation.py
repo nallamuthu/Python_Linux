@@ -1,6 +1,18 @@
 import socket
 import os
 
+'''
+def validate_ip_logic(ip_address):
+def validate_ip(ip_address):
+def set_all_dict_value(input_dict,value):
+def remove_duplicate_list(input_list):
+def remove_empty_element_list(input_list):
+def list_to_file(input_list,output_file):
+def file_to_list(input_file): 
+def get_file_details(input_file):
+def file_string_replace(input_file):
+'''
+
 #Remove Duplicates from list - Input (ipaddress)1 | Output (status)1
 def validate_ip_logic(ip_address):
 	valid_host=ip_address.split(".")
