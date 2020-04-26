@@ -25,3 +25,9 @@ input_list=['line1','line2','line3']
 with open('out_file.txt','w') as fi:
 	for element in input_list:
 		fi.write(element+"\n")
+        
+#Check file exist and convert that file to list   
+input_file='inp_file.txt'
+if os.path.isfile(input_file): #Check file exist
+    with open(output_file) as f: #Open file
+        output_list = f.read().splitlines() #Convert file to list
