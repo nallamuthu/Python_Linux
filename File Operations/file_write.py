@@ -1,4 +1,3 @@
-""" python v2.7.9 file write operation """
 
 
 portlist=[21,22,25,80,8080,9999,8888,143,3306]
