@@ -1,3 +1,30 @@
+import socket
+
+#Remove Duplicates from list - Input (ipaddress)1 | Output (status)1
+def validate_ip_logic(ip_address):
+	valid_host=ip_address.split(".")
+	len_host=len(valid_host)
+	if (len_host<4) or (len_host>4):
+		status=False
+	elif len_host==4:
+		for i in valid_host:
+			if (int(i)<0) or (int(i)>255):
+				status=False
+				break
+			if valid:
+				status=True
+	return status
+
+#Remove Duplicates from list - Input (ipaddress)1 | Output (status)1
+def validate_ip(ip_address):
+	status=""
+	try:
+		socket.inet_aton(ip_address)
+		status=True
+	except socket.error:
+		status=False
+	return status
+
 #Remove Duplicates from list - Input (list)1 | Output (list)1
 def remove_duplicate_list(input_list):
 	output_list = list(set(input_list))
