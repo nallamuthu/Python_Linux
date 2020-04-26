@@ -1,4 +1,3 @@
-""" python v2.7.9 File read in linux"""
 
 print("[+] Read whole File [+]")
 with open("ports.txt") as line:
