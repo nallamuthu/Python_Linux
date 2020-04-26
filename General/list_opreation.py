@@ -9,3 +9,9 @@ list_count=len(file_list)
 #Search element exist in List
 if "search_text" in file_list: 
 	print("Element Found")
+
+#Write list to File
+input_list=['line1','line2','line3']
+with open('out_file.txt','w') as fi:
+	for element in input_list:
+		fi.write(element+"\n")
