@@ -3,6 +3,8 @@
 ## General:
 * [List](https://github.com/nallamuthu/Python_Snippets/blob/master/General/list_opreation.py)    - Remove Duplicates, Remove Null, Covert file to List, Count
 * [SQLITE3](https://github.com/nallamuthu/Python_Snippets/blob/master/SQLite3/sql.py) - Contains all the sqlite3 python operations. Create, Update, Insert, Select queries 
+* [DB to Excel](https://github.com/nallamuthu/Python_Snippets/blob/master/SQLite3/dbtoexcel.py) - Convert the SQLITE DB file to Excel File with each table as sheet name
+
 
 ## Tools Scanner:
 * [SSL Certificate](https://github.com/nallamuthu/Python_Snippets/blob/master/Scanner/ssl_certificate_scanner.py) - Request Remote https Site URL and parse the certificate details and return in dictonary
