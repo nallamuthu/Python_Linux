@@ -1,4 +1,4 @@
-# Python3 scripts
+# :snake: Python3 scripts :snake:
 
 ## General:
 * [List](https://github.com/nallamuthu/Python_Snippets/blob/master/General/list_opreation.py)    - Remove Duplicates, Remove Null, file to List, Count list, List of File
