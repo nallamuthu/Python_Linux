@@ -13,7 +13,7 @@
 * [SSL Certificate](https://github.com/nallamuthu/Python_Snippets/blob/master/Scanner/ssl_certificate_scanner.py) - Request Remote https Site URL and parse the certificate details and return in dictonary
 * [HTTP Headers](https://github.com/nallamuthu/Python_Snippets/blob/master/Scanner/http_security_header_scanner.py)    - Request Remote https/http Site URL and scan for the HTTP Security Headers
 
-## Tools Parsers:
+## Tools Parser:
 * [NMAP](https://github.com/nallamuthu/Python_Snippets/blob/master/Parser/nmap_xml_parser.py)    - Parse XML Output file and return the details in ditonary
 * [sslyze](https://github.com/nallamuthu/Python_Snippets/blob/master/Parser/sslyze_xml_parser.py)  - Parse XML Output File and return the details in dictonary
 * [testssl](https://github.com/nallamuthu/Python_Snippets/blob/master/Parser/testssl_csv_parser.py) - Parse CSV Output File and return the details in dictonary
