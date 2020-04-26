@@ -11,6 +11,7 @@ def list_to_file(input_list,output_file):
 def file_to_list(input_file): 
 def get_file_details(input_file):
 def file_string_replace(input_file):
+def check_file(input_file):
 '''
 
 #Remove Duplicates from list - Input (ipaddress)1 | Output (status)1
@@ -91,3 +92,10 @@ def file_string_replace(input_file):
 	f2.write(input)
 	f1.close()
 	f2.close()
+    
+#Check file and exist and file is not empty - Input (filename)1 | Output(status) 
+def check_file(input_file):
+    status=False
+    if os.path.isfile(input_file) and os.path.getsize(input_file) > 0:
+        status=True
+    return status
