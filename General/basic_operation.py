@@ -1,4 +1,5 @@
 import socket
+import os
 
 #Remove Duplicates from list - Input (ipaddress)1 | Output (status)1
 def validate_ip_logic(ip_address):
@@ -24,6 +25,11 @@ def validate_ip(ip_address):
 	except socket.error:
 		status=False
 	return status
+
+#Set all the dictonary value to some string - Input (input_dict,string) | Output (output_dict)1
+def set_all_dict_value(input_dict,value):
+	result_dict = dict.fromkeys( input_dict, value )
+	return result_dict
 
 #Remove Duplicates from list - Input (list)1 | Output (list)1
 def remove_duplicate_list(input_list):
