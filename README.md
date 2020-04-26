@@ -1,4 +1,4 @@
-# Python scripts for several operations 
+# Python3 scripts
 
 ## General:
 * List    - Remove Duplicates, Remove Null, Covert file to List, Count
